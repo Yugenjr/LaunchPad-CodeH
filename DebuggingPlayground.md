@@ -151,7 +151,7 @@ npm install
 - [ ] Verify API endpoint exists
 - [ ] Test endpoint using Postman/curl
 - [ ] Check request/response format
-- [ ] Look for SQL errors in logs
+- [ ] Look for MongoDB errors in logs
 - [ ] Verify authentication tokens
 
 ### Common Backend Issues
