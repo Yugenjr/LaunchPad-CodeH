@@ -40,7 +40,7 @@ rm -rf node_modules package-lock.json
 npm install
 ```
 
-### Problem: Port already in use (3000, 5000, etc.)
+### Problem: Port already in use (5173 etc. )
 
 **Causes:**
 - Previous process still running
@@ -48,19 +48,19 @@ npm install
 
 **Solution (Linux/Mac):**
 ```bash
-# Find process using port 3000
-lsof -i :3000
+# Find process using port 5173
+lsof -i :5173
 
 # Kill process
 kill -9 <PID>
 
 # Or use different port
-PORT=3001 npm start
+npm start
 ```
 
 **Solution (Windows):**
 ```bash
-netstat -ano | findstr :3000
+netstat -ano | findstr :5173
 taskkill /PID <PID> /F
 ```
 
